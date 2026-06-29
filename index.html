@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mya Moore | GIS Portfolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-overlay">
+        <h1>Mya Moore</h1>
+        <p>
+          GIS Specialist • Geography Graduate Researcher • Hazard & Climate Risk
+          Analysis
+        </p>
+      </div>
+    </header>
+
+    <nav class="navbar">
+      <button class="tab-btn active" onclick="openTab('about', this)">
+        About
+      </button>
+
+      <button class="tab-btn" onclick="openTab('projects', this)">
+        Projects
+      </button>
+
+      <button class="tab-btn" onclick="openTab('resume', this)">Resume</button>
+
+      <button class="tab-btn" onclick="openTab('contact', this)">
+        Contact
+      </button>
+    </nav>
+
+    <main>
+      <!-- ABOUT -->
+      <section id="about" class="tab-content active">
+        <div class="content-card about-layout">
+          <div class="about-photo">
+            <img src="images/linkedin_photo .jpeg" alt="Mya Moore" />
+          </div>
+
+          <div class="about-text">
+            <h2>About Me</h2>
+
+            <p>
+              I am a graduate geography researcher and GIS specialist focused on
+              climate displacement, hazard vulnerability, environmental justice,
+              and spatial analysis. My work combines GIS, LiDAR terrain
+              analysis, hazard mapping, demographic analysis, and geospatial
+              visualization to better understand how environmental risk impacts
+              communities.
+            </p>
+
+            <p>
+              My research interests include climate adaptation, disaster risk,
+              hazard mitigation, public health geography, environmental justice,
+              and climate-driven displacement.
+            </p>
+
+            <div class="hobbies">
+              <h3>Outside of GIS</h3>
+
+              <p>
+                I enjoy hiking, field exploration, and taking my cat Apollo on
+                walks.
+              </p>
+
+              <div class="hobby-gallery">
+                <img src="images/IMG_9761.png" />
+                <img src="images/IMG_1091.png" />
+                <img src="images/IMG_9177.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="tab-content">
+        <!-- SEATTLE -->
+        <div class="project-card">
+          <h2>Hazard Gentrification & Environmental Justice</h2>
+
+          <img src="images/Seattle_red_new.jpg" class="project-preview-image" />
+
+          <p>
+            Spatial analysis of historical redlining, demographic change, hazard
+            exposure, and environmental justice patterns across Seattle.
+          </p>
+
+          <button
+            class="project-button"
+            onclick="openModal('gentrificationModal')"
+          >
+            View Project
+          </button>
+        </div>
+
+        <!-- LIDAR -->
+        <div class="project-card">
+          <h2>LiDAR-Based Landslide Susceptibility Assessment</h2>
+
+          <img
+            src="images/Lidar_Project_Map_1.jpg"
+            class="project-preview-image"
+          />
+
+          <p>
+            LiDAR terrain analysis, DEM classification, slope modeling, and
+            hillshade visualization for landslide susceptibility assessment.
+          </p>
+
+          <button class="project-button" onclick="openModal('lidarModal')">
+            View Project
+          </button>
+        </div>
+      </section>
+
+      <!-- RESUME -->
+      <section id="resume" class="tab-content">
+        <div class="content-card">
+          <div class="resume-container">
+            <header class="resume-header-custom">
+              <h2>Myawna (Mya) Moore</h2>
+              <p>
+                Denver, Colorado |
+                <a href="mailto:myammoore14@gmail.com">myammoore14@gmail.com</a>
+                | (405) 305-3004<br />
+                <a
+                  href="https://www.linkedin.com/in/myawna-moore"
+                  target="_blank"
+                  >www.linkedin.com/in/myawna-moore</a
+                >
+              </p>
+            </header>
+
+            <section class="resume-section">
+              <h3>Education</h3>
+
+              <div class="resume-item">
+                <div class="resume-item-header">
+                  <h4>University of Denver</h4>
+                  <span class="date">Expected June 2026</span>
+                </div>
+                <p class="location">Denver, CO</p>
+                <p class="role">Master of Arts in Geography</p>
+              </div>
+
+              <div class="resume-item">
+                <div class="resume-item-header">
+                  <h4>University of Central Oklahoma</h4>
+                  <span class="date">August 2019 - May 2023</span>
+                </div>
+                <p class="location">Edmond, OK</p>
+                <p class="role">BA Geography, Minor in Marketing</p>
+              </div>
+            </section>
+
+            <section class="resume-section">
+              <h3>Work Experience</h3>
+
+              <div class="resume-item">
+                <div class="resume-item-header">
+                  <h4>Freelance GIS Work</h4>
+                  <span class="date">March 2025 - June 2025</span>
+                </div>
+                <p class="location">Remote</p>
+                <p class="role">GIS Analyst</p>
+                <ul class="resume-list">
+                  <li>
+                    Colorado Sustainability Health and Wellbeing Thesis for Uma
+                    Baysal, Phd Student - Data Organization of 5 datasets and
+                    integrated them as functioning layers to ArcGIS Online
+                    dashboard with Excel to Table geoprocessing.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <div class="resume-item-header">
+                  <h4>University of Denver</h4>
+                  <span class="date">September 2024 - Present</span>
+                </div>
+                <p class="location">Denver, CO</p>
+                <p class="role">Graduate Teaching Assistant</p>
+                <ul class="resume-list">
+                  <li>Instructed two weekly labs of 20+ students</li>
+                  <li>Presented lab material weekly</li>
+                  <li>
+                    Graded and provided feedback on student assignments with
+                    weekly deadlines
+                  </li>
+                  <li>Attended TA meetings and coordinated in a group</li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <div class="resume-item-header">
+                  <h4>Reagan Smith Inc.</h4>
+                  <span class="date">May 2023 - August 2024</span>
+                </div>
+                <p class="location">Oklahoma City, OK</p>
+                <p class="role">GIS Mapping Specialist</p>
+                <ul class="resume-list">
+                  <li>
+                    Translated complex land descriptions using Tract Builder to
+                    support permitting and compliance.
+                  </li>
+                  <li>
+                    Created original plat maps for energy, archaeology, and
+                    tribal broadband grant projects.
+                  </li>
+                  <li>
+                    Built geodatabases from federal and state TSRs, enhancing
+                    data accuracy and access.
+                  </li>
+                  <li>
+                    Georeferenced 500+ historical land records for underserved
+                    agencies and Native American tribes.
+                  </li>
+                  <li>
+                    Designed and executed 30 original plat books sold to the
+                    Ponca Tribe of Oklahoma's broadband and energy grant
+                    initiatives.
+                  </li>
+                  <li>
+                    Performed spatial analysis to identify project locations,
+                    improving planning efficiency.
+                  </li>
+                  <li>
+                    Mentored GIS interns and developed training resources to
+                    support team growth.
+                  </li>
+                  <li>
+                    Contributed to archaeological fieldwork, ensuring compliance
+                    with cultural resource standards.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <div class="resume-item-header">
+                  <h4>Reagan Smith Inc.</h4>
+                  <span class="date">May 2022 - August 2022</span>
+                </div>
+                <p class="location">Oklahoma City, OK</p>
+                <p class="role">GIS Mapping Intern</p>
+                <ul class="resume-list">
+                  <li>
+                    Digitized land titles by mapping legal description
+                    (township, range).
+                  </li>
+                  <li>Measured boundary lines using surveying equipment.</li>
+                  <li>
+                    Updated client-based web maps on ArcGIS Online to display
+                    current data.
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="resume-section">
+              <h3>Experiences</h3>
+              <div class="resume-text-block">
+                <p>
+                  <strong>Graduate Mentor Fellows 2024:</strong> Undergraduate
+                  Mentor
+                </p>
+                <p>
+                  <strong>Leaders of Tomorrow Council 2019-2023:</strong>
+                  Scholarship Recipient
+                </p>
+                <p>
+                  <strong>Geography Student Organization 2021-2023:</strong>
+                  Secretary and Treasurer
+                </p>
+              </div>
+            </section>
+
+            <section class="resume-section">
+              <h3>Additional Skills</h3>
+              <div class="resume-text-block">
+                <p>
+                  Teaching and instructing large groups, Microsoft Suites -
+                  Sufficient in Excel, IBM SPSS - Statistical Analysis, ESRI
+                  ArcGIS - ArcPro, ArcGIS Online, ArcMap, ArcSurvey,
+                  Intermediate QGIS, Intermediate SQL coding for database
+                  design, Georeferencing and Digitizing, Utilize Tract Building
+                  Software, GPS field data processing, Lidar Processing
+                </p>
+              </div>
+            </section>
+
+            <section class="resume-section">
+              <h3>Certifications</h3>
+              <div class="resume-text-block">
+                <p>
+                  ESRI Managing Lidar Data Using Mosaic Datasets, ESRI Managing
+                  Lidar Data Using LAS Datasets, CITI Responsible Conduct of
+                  Research Course RCR
+                </p>
+              </div>
+            </section>
+
+            <div style="text-align: center; margin-top: 3rem">
+              <a href="resume.pdf" class="btn-download" download
+                >Download PDF Resume</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="tab-content">
+        <div class="content-card contact-card">
+          <h2>Contact</h2>
+
+          <div class="contact-grid">
+            <a href="mailto:myammoore14@gmail.com" class="contact-link">
+              <i class="fas fa-envelope"></i>
+              Email
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/myawna-moore"
+              target="_blank"
+              class="contact-link"
+            >
+              <i class="fab fa-linkedin"></i>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- SEATTLE MODAL -->
+    <div id="gentrificationModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('gentrificationModal')">
+          &times;
+        </span>
+
+        <h2>Hazard Gentrification & Environmental Justice</h2>
+
+        <div class="modal-gallery">
+          <img
+            src="images/Seattle_red_new.jpg"
+            alt="Seattle Redlining Analysis"
+            class="modal-main-image"
+          />
+          />
+
+          <img
+            src="images/Seattle_New.jpg"
+            alt="Seattle Demographic Analysis"
+            class="modal-main-image"
+          />
+          />
+        </div>
+
+        <div class="project-description">
+          <p>
+            This project evaluates how historical redlining spatially aligns
+            with race, income, education, and natural hazard exposure across
+            Seattle, Washington.
+          </p>
+
+          <p>
+            The research investigates whether low-income and minority
+            populations are disproportionately distributed in natural hazard
+            zones and whether those communities may face increased risk of
+            hazard gentrification and climate-driven displacement.
+          </p>
+
+          <p>
+            ACS demographic estimates, historical HOLC redlining data, and
+            Seattle hazard exposure datasets were integrated within a GIS
+            workflow to analyze spatial patterns of vulnerability, inequality,
+            and neighborhood change.
+          </p>
+
+          <p>
+            The project also examines demographic shifts between ACS 5-year
+            estimates to identify potential indicators of gentrification within
+            historically redlined communities.
+          </p>
+
+          <p>
+            Additionally, hazard exposure data is obtained from the Federal
+            Emergency Management Agency (FEMA)'s National Risk Index database.
+            This database assesses the risk of 18 natural hazards across the
+            United States.
+          </p>
+        </div>
+
+        <div class="project-links">
+          <a
+            href="https://dsl.richmond.edu/panorama/redlining/"
+            target="_blank"
+          >
+            Redlining Dataset
+          </a>
+          <a
+            href="https://www.fema.gov/flood-maps/products-tools/national-risk-index"
+          >
+            FEMA NRI Dataset
+          </a>
+
+          <a
+            href="https://experience.arcgis.com/experience/2acb05d732134331bc05214740076373"
+            target="_blank"
+          >
+            Seattle Hazard Explorer
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- LIDAR MODAL -->
+    <div id="lidarModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('lidarModal')"> &times; </span>
+
+        <h2>LiDAR-Based Landslide Susceptibility Assessment</h2>
+
+        <img src="images/Lidar_Project_Map_1.jpg" class="modal-main-image" />
+
+        <div class="modal-description">
+          <p>
+            This project visualizes landslide susceptibility across Mercer
+            Island using LiDAR-derived DEMs, slope analysis, hillshade modeling,
+            and terrain classification techniques.
+          </p>
+
+          <p>
+            Multiple terrain models revealed elevated landslide risk near the
+            I-90 corridor and the outer slopes of Mercer Island.
+          </p>
+
+          <p>
+            Together, the models demonstrate how LiDAR terrain visualization
+            supports hazard mitigation planning and geospatial risk assessment.
+          </p>
+        </div>
+
+        <div class="project-links">
+          <a href="https://apps.nationalmap.gov/lidar-explorer/#/">
+            LiDAR 3dep Dataset
+          </a>
+        </div>
+
+        <div class="modal-gallery">
+          <img src="images/Cert1.png" class="gallery-image" />
+
+          <img src="images/Cert2.png" class="gallery-image" />
+
+          <img src="images/Cert3.png" class="gallery-image" />
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
